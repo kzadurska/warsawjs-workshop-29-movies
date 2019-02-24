@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestService } from 'src/app/request-service.service';
 
 @Component({
   selector: 'app-movie-list-page',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie-list-page.component.css']
 })
 export class MovieListPageComponent implements OnInit {
-
-  constructor() { }
+  public movieList:Array<any> = []
+  constructor(private requestService: RequestService) { }
 
   ngOnInit() {
+    this.requestService.fetchList().subscribe(response => {
+      console.log(response)
+      return this.movieList = response
+    })
   }
 
 }

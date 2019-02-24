@@ -1,0 +1,8 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://instagram.flux1-1.fna.fbcdn.net/vp/9e93d5078c39db5d2b76a935549d9256/5CEE5389/t51.2885-19/s150x150/47584847_2223430994579574_791224587575623680_n.jpg?_nc_ht=instagram.flux1-1.fna.fbcdn.net');
+    background-size: cover;
+  }

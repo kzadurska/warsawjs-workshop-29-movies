@@ -4,9 +4,11 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -18,11 +20,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule, 
-    MatCheckboxModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [], // provide request service here, supposedly
   bootstrap: [AppComponent]
 })
 export class AppModule { }
