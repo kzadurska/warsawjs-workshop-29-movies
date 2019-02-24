@@ -1,26 +1,26 @@
-<p>
-  movie-list-page works!
-</p>
-
-<br />
 <div *ngIf="movieList.length === 0">Loading</div>
 <div  class="container" *ngIf="movieList.length > 0 ">
 
-
-<mat-card class="example-card" *ngFor="let movie of movieList">
+  
+  <mat-card class="example-card" *ngFor="let movie of movieList">
     <mat-card-header>
-
+      
       <mat-card-title>{{movie.title}}</mat-card-title>
       <mat-card-subtitle>Rating: {{movie.rating}}</mat-card-subtitle>
+      
+      
     </mat-card-header>
     <img mat-card-image src={{movie.posterSrc}} alt="Photo of a Shiba Inu">
     <mat-card-content>
       <p>
         Release date: {{movie.releaseDate | date}}
+        <a class="card-link" mat-button color="primary" [routerLink]="['/movies/', movie.id]">See details
+        </a>
       </p>
     </mat-card-content>
     <mat-chip-list>
         <mat-chip color="accent" selected *ngFor="let genre of movie.genres">{{genre}}</mat-chip>
       </mat-chip-list>
+    
   </mat-card>
 </div>
