@@ -1,4 +1,8 @@
-<div *ngIf="movieList.length === 0">Loading</div>
+<div *ngIf="movieList.length === 0" class="loader">
+    <h2>Loading...</h2>
+    <mat-spinner></mat-spinner>
+  </div>
+
 <div  class="container" *ngIf="movieList.length > 0 ">
 
   

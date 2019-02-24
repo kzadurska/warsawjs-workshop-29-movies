@@ -9,3 +9,11 @@
       flex-wrap: wrap;
       width: 90vw;
   }
+
+  .loader {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+    margin: 0 auto;
+  }

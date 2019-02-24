@@ -6,6 +6,7 @@ import { MovieDetailsComponent } from './components/movie-details/movie-details.
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {MatChipsModule} from '@angular/material/chips';
     MovieListPageRoutingModule,
     MatCardModule,
     MatButtonModule,
-    MatChipsModule
+    MatChipsModule,
+    MatProgressSpinnerModule
   ]
 })
 export class MovieListPageModule { }
