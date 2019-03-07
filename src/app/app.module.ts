@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule }  from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -24,7 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatToolbarModule,
     HttpClientModule
   ],
-  providers: [], // provide request service here, supposedly
+  providers: [], // Provide request service here, supposedly, works fine without
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,7 +9,9 @@
     <mat-card-header>
       
 
-      <mat-card-title>{{movie.title}}</mat-card-title>
+      <mat-card-title>{{movie.title}}
+        <mat-chip color="warn" selected *ngIf="movie.mock">Mocked</mat-chip>
+      </mat-card-title>
 
       <mat-card-subtitle>Rating: {{movie.rating}} <br />
           Votes: {{movie.votes}}
